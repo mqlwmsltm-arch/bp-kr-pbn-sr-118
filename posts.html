@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (1/2) · kr-pbn-sr-118</title>
+  <meta name="description" content="kr-pbn-sr-118에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://mangwon-shirt-review.pbn-builder.xyz/posts.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ /* CSS Reset & Variables */
+ * {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+
+ :root {
+ --primary: #1c1108;
+ --secondary: #f9f4ec;
+ --accent: #9a7a3a;
+ --accent-light: #dfd5c6;
+ --font-display: 'Playfair Display', 'Cormorant Garamond', serif;
+ --font-body: 'Noto Serif KR', serif;
+ --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+ }
+
+ body {
+ background-color: var(--primary);
+ color: var(--secondary);
+ font-family: var(--font-body);
+ line-height: 1.8;
+ font-size: 16px;
+ overflow-x: hidden;
+ /* Printed-matter texture via CSS noise */
+ background-image: radial-gradient(rgba(154, 122, 58, 0.03) 1px, transparent 0),
+ radial-gradient(rgba(154, 122, 58, 0.03) 1px, transparent 0);
+ background-size: 8px 8px;
+ background-position: 0 0, 4px 4px;
+ }
+
+ /* Common Typography & Layout elements */
+ h1, h2, h3, h4 {
+ font-family: var(--font-display);
+ font-weight: 400;
+ letter-spacing: -0.03em;
+ }
+
+ a {
+ color: var(--accent);
+ text-decoration: none;
+ transition: var(--transition-smooth);
+ }
+
+ a:hover {
+ color: var(--secondary);
+ }
+
+ .n-wrap-9nbv-border {
+ border: 1px solid var(--accent);
+ outline: 1px solid var(--accent);
+ outline-offset: -4px;
+ padding: 32px;
+ position: relative;
+ }
+
+ /* Drop cap styling */
+ .r-nav-g6sm::first-letter {
+ font-family: var(--font-display);
+ font-size: 3.5rem;
+ float: left;
+ margin-right: 12px;
+ line-height: 0.9;
+ color: var(--accent);
+ font-weight: 700;
+ }
+
+ /* Header / Sticky Navigation */
+ .m-hero-pdrs {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ z-index: 1000;
+ background: rgba(28, 17, 8, 0.92);
+ backdrop-filter: blur(12px);
+ border-bottom: 1px solid rgba(154, 122, 58, 0.2);
+ transition: var(--transition-smooth);
+ }
+
+ .n-hero-c4rl-container {
+ max-width: 1050px;
+ margin: 0 auto;
+ padding: 20px 24px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+ .k-hero-uhy6 {
+ font-family: var(--font-display);
+ font-size: 1.25rem;
+ font-weight: 700;
+ color: var(--accent);
+ text-transform: uppercase;
+ letter-spacing: 0.15em;
+ }
+
+ .n-hero-c4rl-menu {
+ display: flex;
+ gap: 32px;
+ list-style: none;
+ }
+
+ .n-hero-c4rl-link {
+ font-size: 0.85rem;
+ text-transform: uppercase;
+ letter-spacing: 0.1em;
+ color: var(--secondary);
+ opacity: 0.8;
+ }
+
+ .n-hero-c4rl-link:hover {
+ opacity: 1;
+ color: var(--accent);
+ }
+
+ /* Hero Section (Asymmetric Grid) */
+ .n-foot-sjtt {
+ padding: 200px 0 100px 0;
+ position: relative;
+ overflow: hidden;
+ }
+
+ .n-foot-sjtt-container {
+ max-width: 1050px;
+ margin: 0 auto;
+ padding: 0 24px;
+ display: grid;
+ grid-template-columns: 1.2fr 0.8fr;
+ gap: 48px;
+ align-items: start;
+ }
+
+ .n-foot-sjtt-title-block {
+ text-align: left;
+ }
+
+ .r-hero-cepi-label {
+ font-family: var(--font-display);
+ font-size: 0.75rem;
+ text-transform: uppercase;
+ letter-spacing: 0.25em;
+ color: var(--accent);
+ display: block;
+ margin-bottom: 16px;
+ }
+
+ .n-foot-sjtt h1 {
+ font-size: clamp(2.5rem, 5vw, 4rem);
+ line-height: 1.15;
+ color: var(--secondary);
+ margin-bottom: 24px;
+ word-break: keep-all;
+ }
+
+ .n-foot-sjtt-desc {
+ font-size: 1.1rem;
+ color: var(--accent-light);
+ max-width: 520px;
+ margin-bottom: 32px;
+ font-weight: 300;
+ }
+
+ .n-foot-sjtt-empty {
+ border-left: 1px solid rgba(154, 122, 58, 0.2);
+ padding-left: 32px;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ }
+
+ /* Kinetic Asymmetric Flow & Indent Sections */
+ .v-img-cqth-wrapper {
+ max-width: 1050px;
+ margin: 0 auto;
+ padding: 80px 24px;
+ position: relative;
+ }
+
+ /* SVG Flow Divider */
+ .v-top-2rvy-divider {
+ width: 100%;
+ height: 48px;
+ color: var(--accent);
+ opacity: 0.15;
+ margin: 40px 0;
+ }
+
+ /* Alternating Indents (0%, 15%, 35%) */
+ .r-img-r83k-0 {
+ margin-left: 0%;
+ max-width: 85%;
+ }
+
+ .r-img-r83k-15 {
+ margin-left: 15%;
+ max-width: 80%;
+ }
+
+ .r-img-r83k-35 {
+ margin-left: 30%;
+ max-width: 70%;
+ }
+
+ @media (max-width: 768px) {
+ .r-img-r83k-15, .r-img-r83k-35 {
+ margin-left: 0;
+ max-width: 100%;
+ }
+ }
+
+ .v-img-cqth-title {
+ font-size: 2rem;
+ color: var(--accent);
+ margin-bottom: 24px;
+ position: relative;
+ display: inline-block;
+ }
+
+ .m-hero-o7b4 {
+ font-size: 1.05rem;
+ margin-bottom: 24px;
+ color: var(--secondary);
+ opacity: 0.9;
+ text-align: justify;
+ }
+
+ /* Diagonal Flow Component (Overlap Grid) */
+ .v-hero-a3qu-block {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 40px;
+ margin: 60px 0;
+ position: relative;
+ }
+
+ .v-hero-a3qu-card {
+ background: rgba(28, 17, 8, 0.4);
+ border: 1px solid rgba(154, 122, 58, 0.3);
+ padding: 40px;
+ border-radius: 4px;
+ box-shadow: 0 2px 8px rgba(0,0,0,0.01);
+ transition: var(--transition-smooth);
+ }
+
+ .v-hero-a3qu-card:first-child {
+ transform: translateY(-20px);
+ }
+
+ .v-hero-a3qu-card:last-child {
+ transform: translateY(20px);
+ }
+
+ @media (max-width: 768px) {
+ .v-hero-a3qu-block {
+ grid-template-columns: 1fr;
+ }
+ .v-hero-a3qu-card:first-child,
+ .v-hero-a3qu-card:last-child {
+ transform: none;
+ }
+ }
+
+ .n-hero-y4x0-tag {
+ font-family: var(--font-display);
+ font-size: 0.75rem;
+ color: var(--accent);
+ text-transform: uppercase;
+ letter-spacing: 0.15em;
+ display: block;
+ margin-bottom: 12px;
+ }
+
+ /* FAQ Section */
+ .t-hero-bjtf-section {
+ background-color: rgba(249, 244, 236, 0.02);
+ border-top: 1px solid rgba(154, 122, 58, 0.1);
+ border-bottom: 1px solid rgba(154, 122, 58, 0.1);
+ padding: 100px 0;
+ }
+
+ .t-hero-bjtf-container {
+ max-width: 1050px;
+ margin: 0 auto;
+ padding: 0 24px;
+ }
+
+ .t-hero-bjtf-grid {
+ display: grid;
+ grid-template-columns: 1fr;
+ gap: 32px;
+ margin-top: 48px;
+ }
+
+ .t-hero-bjtf-item {
+ border-bottom: 1px solid rgba(154, 122, 58, 0.2);
+ padding-bottom: 24px;
+ }
+
+ .t-hero-bjtf-question {
+ font-family: var(--font-body);
+ font-weight: 600;
+ font-size: 1.15rem;
+ color: var(--accent);
+ margin-bottom: 12px;
+ display: flex;
+ align-items: flex-start;
+ gap: 12px;
+ }
+
+ .t-hero-bjtf-answer {
+ font-size: 1rem;
+ color: var(--accent-light);
+ line-height: 1.7;
+ padding-left: 28px;
+ }
+
+ /* Author Bio Section (E-A-T Signal) */
+ .q-grid-xmsw-section {
+ max-width: 1050px;
+ margin: 80px auto;
+ padding: 0 24px;
+ }
+
+ .q-grid-xmsw-card {
+ border: 1px solid rgba(154, 122, 58, 0.3);
+ padding: 40px;
+ background: rgba(28, 17, 8, 0.6);
+ display: flex;
+ gap: 32px;
+ align-items: center;
+ }
+
+ @media (max-width: 768px) {
+ .q-grid-xmsw-card {
+ flex-direction: column;
+ text-align: center;
+ }
+ }
+
+ .q-grid-xmsw-avatar {
+ width: 80px;
+ height: 80px;
+ border-radius: 50%;
+ border: 2px solid var(--accent);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-family: var(--font-display);
+ font-size: 1.8rem;
+ color: var(--accent);
+ background: var(--primary);
+ }
+
+ .q-grid-xmsw-info h4 {
+ font-family: var(--font-body);
+ font-weight: 700;
+ font-size: 1.1rem;
+ color: var(--secondary);
+ margin-bottom: 8px;
+ }
+
+ .q-grid-xmsw-bio {
+ font-size: 0.95rem;
+ color: var(--accent-light);
+ line-height: 1.6;
+ }
+
+ /* Buttons (Sharp design) */
+ .q-btn-isv5-sharp {
+ display: inline-block;
+ background: transparent;
+ color: var(--accent);
+ border: 1px solid var(--accent);
+ padding: 14px 28px;
+ font-size: 0.85rem;
+ text-transform: uppercase;
+ letter-spacing: 0.2em;
+ cursor: pointer;
+ transition: var(--transition-smooth);
+ border-radius: 0; /* Sharp */
+ }
+
+ .q-btn-isv5-sharp:hover {
+ background: var(--accent);
+ color: var(--primary);
+ }
+
+ /* Footer */
+ .v-btn-0819 {
+ border-top: 1px solid rgba(154, 122, 58, 0.2);
+ padding: 48px 24px;
+ background: #110a05;
+ }
+
+ .v-btn-0819-container {
+ max-width: 1050px;
+ margin: 0 auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-wrap: wrap;
+ gap: 24px;
+ }
+
+ .n-list-167f {
+ font-size: 0.8rem;
+ color: var(--accent-light);
+ opacity: 0.6;
+ }
+
+ /* Utility Hidden Elements for SEO/DOM Noise */
+ .r-main-kqe7-marker {
+ display: none !important;
+ visibility: hidden;
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (1/2) · kr-pbn-sr-118">
+  <meta property="og:description" content="kr-pbn-sr-118에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://mangwon-shirt-review.pbn-builder.xyz/posts.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header class="m-hero-pdrs">
+ <nav class="n-hero-c4rl-container">
+ <div class="k-hero-uhy6">MANGWON REVIEW</div>
+ <ul class="n-hero-c4rl-menu">
+ <li><a href="#section-intro" class="n-hero-c4rl-link">비교분석</a></li>
+ <li><a href="#section-timing" class="n-hero-c4rl-link">시간대별 차이</a></li>
+ <li><a href="#section-purpose" class="n-hero-c4rl-link">목적별 가이드</a></li>
+ <li><a href="#section-faq" class="n-hero-c4rl-link">자주 묻는 질문</a></li>
+ </ul>
+ </nav>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 33개 · 1/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0401.html">망원 셔츠룸 솔직후기 기반 마포/합정 인디 소셜 라운지 가이드 및 프라이빗 파티 팁</a>
+        <p class="post-item__summary">최근 지인들과 마포 일대에서 모임을 하던 중 망원 셔츠룸 솔직후기 관련 키워드와 관련된 장소들을 살펴본 적이 있습니다. 많은 이들이 단순히 유흥만을 생각하지만, 사실 이 지역에는 독특한 분위기를 자</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0402.html">망원 셔츠룸 솔직후기 대신 살펴볼 동대문 마사지 관리 기준</a>
+        <p class="post-item__summary">인터넷상의 단편적인 망원 셔츠룸 솔직후기 같은 정보에 의존하여 장소를 결정하는 것은 위험한 선택입니다. 특히 신체적인 피로를 풀기 위한 목적이라면 유행보다는 관리의 본질에 집중해야 합니다. 동대문 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0403.html">망원 셔츠룸 솔직후기 분석이 알려주는 지수 성장 클리닉 정보 전략</a>
+        <p class="post-item__summary">웹사이트 최적화와 관련해 망원 셔츠룸 솔직후기 같은 특정 키워드 작업이 도메인에 미치는 영향은 매우 복합적입니다. 안정적인 도메인 지수를 유지하면서 콘텐츠를 이식하기 위해서는 몇 가지 충족 조건이 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0404.html">망원 셔츠룸 솔직후기 통해 살펴보는 마포 홍대 로컬 럭셔리 밤문화 가이드 및 업체 비교</a>
+        <p class="post-item__summary">여러분은 밤늦은 시간 마포와 홍대 일대에서 만족스러운 시간을 보내기 위해 무엇을 가장 먼저 확인하시나요? 인터넷에 떠도는 망원 셔츠룸 솔직후기 같은 단편적인 정보만으로 업체를 선정하는 것이 과연 가</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0405.html">망원 셔츠룸 솔직후기 기반 마포 코인노래방 방음 시설 비교 가이드</a>
+        <p class="post-item__summary">일부 온라인 커뮤니티에 올라온 망원 셔츠룸 솔직후기 문맥을 살펴보면 특정 시설의 소음 차단 능력에 대한 소비자들의 갈증이 높음을 알 수 있습니다. 특히 마포 일대에서 코인노래방을 이용할 때 벽체 밀</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0406.html">망원 셔츠룸 솔직후기 식 구글 알고리즘 감점 치료 및 백링크 수술실</a>
+        <p class="post-item__summary">많은 이들이 망원 셔츠룸 솔직후기 사례를 분석하며 정보의 진실성을 찾듯, 디지털 마케팅 영역에서도 검색엔진 알고리즘의 페널티를 진단하는 과정은 매우 정교해야 합니다. 우리가 직면한 가장 큰 문제는 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0407.html">망원 셔츠룸 솔직후기 확인하고 마포 셔츠룸 예약 시 눈탱이 피하는 법</a>
+        <p class="post-item__summary">망원 셔츠룸 솔직후기 데이터를 살펴보면 공통적으로 발견되는 실수가 바로 확인 절차 없이 성급하게 예약을 진행하는 것입니다. 많은 소비자가 현장에서 예상치 못한 추가 비용을 청구받고 당황하는데, 이는</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0408.html">망원 셔츠룸 솔직후기 읽고 콘텐츠 급수 정화 정보 찾기</a>
+        <p class="post-item__summary">인터넷의 수많은 정보 속에서 망원 셔츠룸 솔직후기 같은 콘텐츠가 검색 상위에 노출되는 이유는 강력한 백링크 주스의 흐름 때문입니다. 좋은 콘텐츠를 가지고 있음에도 불구하고 정체된 웹사이트를 보면 안</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0409.html">망원 셔츠룸 솔직후기 방문 전 반드시 알아야 할 코딩 스쿨 가이드</a>
+        <p class="post-item__summary">최근 번화가에서 친구들과 약속을 잡고 망원 셔츠룸 솔직후기 정보를 검색하다가, 예상치 못한 디지털 전환의 중요성을 체감하게 되었습니다. 단순히 유흥을 즐기는 것보다 생산적인 자동화 기술을 익히는 것</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0410.html">망원 셔츠룸 솔직후기 대신 알아본 수익형 외환 거래 전략의 기초</a>
+        <p class="post-item__summary">망원 셔츠룸 솔직후기 같은 유흥 관련 정보만을 쫓는 것이 현명한 시간 활용인지 고민하는 분들이 많습니다. 많은 사람이 외환 거래를 단순히 운에 맡기는 도박으로 오해하지만, 실제로는 방대한 데이터와 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0411.html">망원 셔츠룸 솔직후기 참고하여 찾은 마포 단체 회식용 룸 안내</a>
+        <p class="post-item__summary">성공적인 비즈니스 회식을 위해서는 장소 선정 시 몇 가지 필수 충족 조건이 있습니다. 망원 셔츠룸 솔직후기를 살펴보며 프라이빗한 공간과 적절한 서비스 수준을 갖춘 곳을 찾으려는 노력이 이어지고 있습</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0412.html">망원 셔츠룸 솔직후기 믿어도 될까? 올바른 셔츠룸 선택의 기준</a>
+        <p class="post-item__summary">과연 온라인에 떠도는 망원 셔츠룸 솔직후기를 전적으로 신뢰해도 되는지 고민해 본 적이 있습니까? 수많은 정보 속에서 진짜 가치를 가려내는 눈을 갖는 것은 소비자에게 가장 중요한 능력입니다. 업체를 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0413.html">망원 셔츠룸 솔직후기 활용하는 마포 홍대 단체 가라오케 예약 가이드</a>
+        <p class="post-item__summary">온라인에 넘쳐나는 망원 셔츠룸 솔직후기 정보들 속에서 실제 도움이 될 만한 내용을 선별하는 것은 쉽지 않은 일입니다. 특히 단체 모임을 계획 중인 분들이라면 검증된 정보를 토대로 신중하게 접근해야 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0414.html">망원 셔츠룸 솔직후기 관점에서 보는 구글 알고리즘 고신용 도메인 보증 카드 발급</a>
+        <p class="post-item__summary">인터넷에서 접하는 망원 셔츠룸 솔직후기 내용들이 서비스의 품질을 대변하듯, 웹 도메인의 신뢰도 역시 디지털 환경에서 매우 중요한 지표로 작용합니다. 특정 도메인이 검색 엔진에서 높은 가치를 인정받기</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0415.html">망원 셔츠룸 솔직후기 확인 전 알아야 할 합정 셔츠룸 단골들이 뽑은 핫플 매거진</a>
+        <p class="post-item__summary">많은 이들이 망원 셔츠룸 솔직후기 정보를 찾다가 소위 낚시성 홍보글에 실망하곤 합니다. 이런 현상은 업계의 폐쇄적인 정보 구조 때문에 더욱 두드러지는데, 방문 전에 미리 실수를 방지하는 것이 중요합</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0416.html">망원 셔츠룸 솔직후기 참고 및 구글 신뢰 지수 모발이식 솔루션 활용법</a>
+        <p class="post-item__summary">망원 셔츠룸 솔직후기 정보를 소비하는 신중한 태도는 디지털 공간에서 구글 신뢰 지수를 관리하는 전략과 매우 닮아 있습니다. 정보의 진위 여부를 판별하고 효율적으로 콘텐츠를 운영하는 과정에서 우리는 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0023.html">망원 셔츠룸 솔직후기 기반으로 분석한 망원 노래방 추천정보</a>
+        <p class="post-item__summary">망원 셔츠룸 솔직후기를 읽다 보면 많은 이용객이 사전에 준비가 부족해 낭패를 보는 경우를 자주 보게 됩니다. 특히 노래방이나 유사 업장을 예약할 때 발생하는 실패는 대부분 정보의 부재가 아닌, 잘못</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0024.html">망원 셔츠룸 솔직후기 확인 및 홍대 노래방 추천정보 체크리스트</a>
+        <p class="post-item__summary">망원 셔츠룸 솔직후기를 확인하는 이용자들이 점차 넓은 지역으로 시야를 확장하면서 홍대 인근의 시설에 대해서도 깊은 관심을 보이고 있습니다. 노래방은 단순히 노래를 부르는 공간을 넘어 접근성과 위치의</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0025.html">망원 셔츠룸 솔직후기 기반 공덕 셔츠룸 추천정보 및 이용 가이드</a>
+        <p class="post-item__summary">오랜만에 만난 지인과 함께 퇴근 후 익숙하지 않은 장소를 방문했을 때 겪는 막막함은 누구나 한 번쯤 경험하는 상황입니다. 인터넷상의 정보를 찾다 보면 망원 셔츠룸 솔직후기 내용을 접하게 되는데, 이</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0026.html">망원 셔츠룸 솔직후기 보며 정리한 연남 유흥 추천정보 및 시간대 팁</a>
+        <p class="post-item__summary">유흥 문화는 무조건 밤늦게 방문해야 즐거움을 누릴 수 있다는 생각은 편견에 가깝습니다. 망원 셔츠룸 솔직후기 기록들을 살펴보면 방문하는 시간대에 따라 서비스의 밀도와 환경이 확연히 달라짐을 알 수 </p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <span class="pager__current">1</span>
+      <a class="pager__link" href="posts-2.html">2</a>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
